@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 90%;
+    margin-inline: auto;
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) ,url("Mask\ group\ \(2\).png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navigation{
+    width: 100%;
+    padding: 20px 0 10px 0;
+}
+
+.navigation .box-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation .box-navigation .box:nth-child(2) li{
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li a{
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li a:hover{
+    color: gray;
+}
+
+.navigation .box-navigation .box:nth-child(3){
+    display: none;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li i{
+    display: none;
+}
+
+/* Hero style */
+header .hero{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%,-50%);
+}
+
+header .hero h1{
+    color: white;
+    font-size: 53px;
+    font-weight: bolder;
+}
+
+header .hero p{
+    text-align: justify;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* sejarah */
+.sejarah{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/* .sejarah .box-sejarah{
+    display: flex;
+} */
+
+.sejarah .box-sejarah .box:nth-child(1){
+    position: relative ;
+    z-index: 1;
+    display: flex;
+}
+
+
+.sejarah .box-sejarah .box:nth-child(2){
+    position: absolute;
+    width: 950px;
+    height: 450px;
+    left: 395px;
+    top: 765px;
+    padding: 30px;
+    background:#26648B;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 50px;
+    padding-left: 350px;
+} 
+
+
+.sejarah .box-sejarah .box:nth-child(2) h2{
+    z-index: -1;
+    font-weight: bolder;
+    display: flex;
+}
+
+.sejarah .box-sejarah .box:nth-child(2) p{
+    z-index: -1;
+    padding-left: 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-size: 14px;
+    font-style: normal;
+    display: flex;
+}
+
+.sejarah .box-sejarah .box:nth-child(2) a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #FFE3B3;
+    color: #26648B;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 12px;
+} 
+
+Event 
+.event{
+    min-height: 100vh;
+} 
+
+.event .container h1{
+    text-align: center;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 990px) {
+    .navigation .box-navigation .box:nth-child(2){
+        display: flex;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        background-color: white;
+        width: 250px;
+        border-radius: 10px;
+        opacity: 0;
+        transition: all .3s ease;
+    }
+
+    .navigation .box-navigation .menu-navigation.menu-active{
+        opacity: 1;
+        top: 100px;
+    }
+
+    .navigation .box-navigation .box:nth-child(2) ul{
+        flex-direction: column;
+    }
+
+    .navigation .box-navigation .box:nth-child(2) ul li a {
+        color: black;
+    }
+
+    .navigation .box-navigation .box:nth-child(2) ul li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .navigation .box-navigation .box:nth-child(2) ul li i{
+        margin-inline: 10px;
+        font-size: 24px;
+    }
+
+    .navigation .box-navigation .box:nth-child(3){
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation .box-navigation .box:nth-child(3) i{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    header .hero h1{
+        font-size: 30px;
+    }   
+}
+
+@media screen and (max-width: 290px) {
+    header .hero h1{
+        font-size: 20px;
+    }    
+}
+
+@media screen and (max-width: 290px) {
+    header .hero p{
+        font-size: 10px;
+    }
+}
+
+
